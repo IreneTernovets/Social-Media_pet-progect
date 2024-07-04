@@ -1,11 +1,19 @@
-import './App.css'
-import Homepage from './pages/Homepage'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Homepage from "./pages/Homepage";
+import Layout from "../src/layout/Layout";
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <Homepage />
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Homepage />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
