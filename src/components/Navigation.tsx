@@ -7,12 +7,20 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import PendingOutlinedIcon from "@mui/icons-material/PendingOutlined";
-import { navStyles, NavItem } from "../components/styled-components/StyledNav";
+
+import {
+  navStyles,
+  NavItem,
+  StyledTwitterIcon,
+} from "../components/styled-components/StyledNav";
 
 const Navigation = () => {
   return (
     <nav className="navigation" css={navStyles}>
       <ul>
+        <NavItem to="/" label="">
+          <StyledTwitterIcon />
+        </NavItem>
         <NavItem to="/" label="Home">
           <HomeIcon />
         </NavItem>

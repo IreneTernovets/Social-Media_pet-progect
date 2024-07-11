@@ -2,6 +2,7 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const navStyles = css`
   ul {
@@ -35,7 +36,7 @@ const StyledNavLink = styled(NavLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
@@ -47,10 +48,14 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
+const StyledTwitterIcon = styled(TwitterIcon)`
+  font-size: 2rem;
+`;
+
 interface NavItemProps {
   to: string;
   label: string;
-  children: React.ReactNode; // This will accept the icon component as a child
+  children: React.ReactNode;
 }
 
 const NavItem: React.FC<NavItemProps> = ({ to, label, children }) => (
@@ -62,4 +67,4 @@ const NavItem: React.FC<NavItemProps> = ({ to, label, children }) => (
   </li>
 );
 
-export { navStyles, NavItem };
+export { navStyles, NavItem, StyledTwitterIcon };

@@ -10,7 +10,7 @@
 } */
 
 :root {
-  --primary-color: #f0f9ff;
+  --primary-color: #ffffff;
   --secondary-color: #1DA1F2;
   --accent-color: #F6F8FA;
   --background-color: #ecf0f1;
@@ -23,20 +23,36 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  background-color: black;
+  background-color: var(--primary-color);
+}
+
+.main-layout-wrapper {
+  margin: 0 15rem;
+  display: grid;
+  grid-template-columns: 250px 1fr 430px;
+
 }
 /*COMMON CLASSES*/
+.twitter-blue {
+  color: var(--secondary-color);
+}
 .widget {
   background-color: var(--accent-color);
   padding: 15px 0;
-  margin: 10px;
+  margin: 10px 0 10px 50px;
   border-radius: 15px;
-  max-width: 25%;
+  
+  
 }
 
 .widget-header {
   padding-bottom: 10px;
   padding-left: 10px;
+}
+
+.widget-group {
+display: flex;
+flex-direction: column;
 }
 
 .people-suggest-user-card{
@@ -49,8 +65,6 @@ body {
 .people-suggest-user-info {
   text-align: left;
 }
-
-
 
 .people-suggest-user-follow_button {
 color: var(--secondary-color);
@@ -123,8 +137,9 @@ border-radius: 20px;
 }
 
 .navigation {
-  width: 15%;
   font-size: 20px;
+  margin-top: 2rem;
+  margin-right: 50px;
 }
 
 .navigation-tweet {
@@ -132,7 +147,61 @@ border-radius: 20px;
   background-color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
+  color: var(--primary-color);
+  font-size: inherit;
+  border-radius: 20px;
   width: 100%;
+}
+
+.post-input-wrapper {
+  width: 100%;
+  border-left: 1px solid #E0E0E0;
+  border-right: 1px solid #E0E0E0;
+}
+
+.post-input-wrapper-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.post-input-input{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post-input-avatar {
+  margin: 10px;
+}
+
+.post-input-input input {
+  font-size: 18px;
+  border: none;
+}
+
+.post-input-input input:focus,
+input:hover,
+input:active {
+    outline: none;
+    box-shadow: none;
+} 
+
+.post-input-wrapper-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px 10px 0px;
+}
+
+.post-input-wrapper-buttons-icons > * {
+  margin-left: 10px;
+}
+
+.post-input-wrapper-buttons-tweet {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
   color: var(--primary-color);
   font-size: inherit;
   border-radius: 20px;

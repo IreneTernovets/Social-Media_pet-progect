@@ -4,10 +4,10 @@ import Navigation from "../components/Navigation";
 
 const Layout = () => {
   return (
-    <>
+    <div className="main-layout-wrapper">
       <Navigation />
       <Outlet />
-    </>
+    </div>
   );
 };
 
