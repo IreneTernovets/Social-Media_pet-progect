@@ -1,4 +1,3 @@
-import React from "react";
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 import Avatar from "@mui/material/Avatar";
 import PhotoOutlinedIcon from "@mui/icons-material/PhotoOutlined";

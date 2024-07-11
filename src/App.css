@@ -153,10 +153,17 @@ border-radius: 20px;
   width: 100%;
 }
 
-.post-input-wrapper {
-  width: 100%;
+.homepage-group {
+  background-color: var(--accent-color);
   border-left: 1px solid #E0E0E0;
   border-right: 1px solid #E0E0E0;
+}
+
+.post-input-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 10px;
 }
 
 .post-input-wrapper-header{
@@ -190,6 +197,7 @@ input:active {
 .post-input-wrapper-buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 15px 15px 10px 0px;
 }
 
@@ -198,6 +206,34 @@ input:active {
 }
 
 .post-input-wrapper-buttons-tweet {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  font-size: inherit;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.welcoming-card-wrapper {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.welcoming-card-wrapper h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.welcoming-card-wrapper p {
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+
+.welcoming-card-wrapper button {
   background-color: var(--secondary-color);
   color: #ffffff;
   border: none;
